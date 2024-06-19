@@ -65,6 +65,25 @@ function App(props) {
             align="center"
             className={classes.title}
           >
+              return (
+    <div className={classes.root}>
+      <AppBar position="static" style={{ background: '#2E3B55' }}>
+        <Toolbar>
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <CloudIcon />
+          </IconButton>
+          <Typography
+            variant="h6"
+            align="center"
+            className={classes.title}
+          >
+            EKS DEMO Blog version 1
+          </Typography>
+          {new Date().toLocaleTimeString()}
+        </Toolbar>
+      </AppBar>
+      <br/>
+
             EKS DEMO Blog
           </Typography>
           {new Date().toLocaleTimeString()}
